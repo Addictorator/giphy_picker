@@ -109,7 +109,7 @@ class GiphyRepository extends Repository<GiphyGif> {
   /// The repository of trending gif images.
   static Future<GiphyRepository> trending(
       {@required String apiKey,
-      String rating = GiphyRating.g,
+      String rating = GiphyRating.r,
       ErrorListener onError}) async {
     final repo = GiphyRepository(
         apiKey: apiKey,
