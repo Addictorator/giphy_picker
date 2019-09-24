@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 class GiphySearchPage extends StatefulWidget {
   final Widget title;
   const GiphySearchPage({this.title});
+
   @override
   _GiphySearchPageState createState() => _GiphySearchPageState();
 }
