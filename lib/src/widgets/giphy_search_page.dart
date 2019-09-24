@@ -34,10 +34,9 @@ class _GiphySearchPageState extends State<GiphySearchPage> {
     final giphy = GiphyContext.of(context);
     return Scaffold(
         appBar: AppBar(
-            title: Image.asset('assets/giphy.png')),
+            title: TextField(controller: _textController, decoration: InputDecoration.collapsed(hintText: 'Search Giphy'), onChanged: (value) => _delayedSearch(giphy, value))),
         body: SafeArea(
             child: Column(children: <Widget>[
-              Padding(padding: EdgeInsets.symmetric(horizontal: 10), child: TextField(controller: _textController, decoration: InputDecoration(hintText: 'Search Giphy'), onChanged: (value) => _delayedSearch(giphy, value))),
               Expanded(
                   child: StreamBuilder(
                       stream: _repoController.stream,
