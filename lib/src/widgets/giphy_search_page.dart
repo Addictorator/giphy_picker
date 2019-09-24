@@ -34,7 +34,8 @@ class _GiphySearchPageState extends State<GiphySearchPage> {
     final giphy = GiphyContext.of(context);
     return Scaffold(
         appBar: AppBar(
-            title: TextField(controller: _textController, decoration: InputDecoration.collapsed(hintText: 'Search Giphy'), onChanged: (value) => _delayedSearch(giphy, value))),
+            title: TextField(style: const TextStyle(color: Colors.white, fontSize: 15.0), controller: _textController, decoration: InputDecoration.collapsed(hintText: 'Search Giphy', hintStyle: TextStyle(color: Colors.white70)
+            ), onChanged: (value) => _delayedSearch(giphy, value))),
         body: SafeArea(
             child: Column(children: <Widget>[
               Expanded(
