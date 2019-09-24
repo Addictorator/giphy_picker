@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 
-import 'package:giphy_picker/src/widgets/giphy_overlay.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:giphy_client/giphy_client.dart';
@@ -84,7 +83,7 @@ class _GiphyImageState extends State<GiphyImage> {
               width: widget.width, height: widget.height, fit: widget.fit);
 
           if (widget.renderGiphyOverlay) {
-            return GiphyOverlay(child: image);
+            return image;
           }
           return image;
         }

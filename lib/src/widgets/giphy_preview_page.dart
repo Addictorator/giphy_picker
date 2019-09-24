@@ -1,3 +1,4 @@
+import 'package:flutter/rendering.dart';
 import 'package:giphy_picker/src/widgets/giphy_image.dart';
 import 'package:flutter/material.dart';
 import 'package:giphy_client/giphy_client.dart';
@@ -22,7 +23,7 @@ class GiphyPreviewPage extends StatelessWidget {
               })
         ]),
         body: SafeArea(
-            child: Center(child: GiphyImage.original(gif: gif)),
+            child: Center(child: GiphyImage.original(gif: gif, fit: BoxFit.cover)),
             bottom: false));
   }
 }
