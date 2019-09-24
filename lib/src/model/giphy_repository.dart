@@ -127,7 +127,7 @@ class GiphyRepository extends Repository<GiphyGif> {
   static Future<GiphyRepository> search(
       {@required String apiKey,
       @required String query,
-      String rating = GiphyRating.g,
+      String rating = GiphyRating.r,
       String lang = GiphyLanguage.english,
       ErrorListener onError}) async {
     final repo = GiphyRepository(
