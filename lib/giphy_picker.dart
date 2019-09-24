@@ -12,7 +12,7 @@ class GiphyPicker {
   static Future<GiphyGif> pickGif(
       {@required BuildContext context,
       @required String apiKey,
-      String rating = GiphyRating.g,
+      String rating = GiphyRating.r,
       String lang = GiphyLanguage.english,
       Widget title,
       ErrorListener onError}) async {
