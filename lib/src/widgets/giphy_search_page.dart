@@ -5,9 +5,6 @@ import 'package:giphy_picker/src/widgets/giphy_thumbnail_grid.dart';
 import 'package:flutter/material.dart';
 
 class GiphySearchPage extends StatefulWidget {
-  final Widget title;
-  const GiphySearchPage({this.title});
-
   @override
   _GiphySearchPageState createState() => _GiphySearchPageState();
 }
